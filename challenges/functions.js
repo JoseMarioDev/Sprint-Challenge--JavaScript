@@ -26,7 +26,7 @@ function multiply(x, y) {
 }
 
 function greeting(firstName, lastName) {
-  return `Hello ${firstName} ${lastName}, nice to meet you!`;
+  return `Hello ${firstName} ${lastName}, nice to meet you!`
 }
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
@@ -38,20 +38,20 @@ console.log(consume('Mary', 'Poppins', greeting)); // Hello Mary Poppins, nice t
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation:
-closure allows functions to look outside its local scope to find the variable its looking for.  in the example, 
-nested function goes one layer above it to myFunction to find the variable it needs.  closure allows for functions to look outside it's local scope
-to find the variable it needs.
+ Explanation:
+ closure allows functions to look outside its local scope to find the variable its looking for.  in the example, 
+ nested function goes one layer above it to myFunction to find the variable it needs.  closure allows for functions to look outside it's local scope
+ to find the variable it needs.
 
-const external = "I'm outside the function";
+// const external = "I'm outside the function";
 
-function myFunction() {
-  console.log(external);
-  const internal = "Hello! I'm inside myFunction!";
+// function myFunction() {
+//   console.log(external);
+//   const internal = "Hello! I'm inside myFunction!";
 
-  function nestedFunction() {
-    console.log(internal);
-  }
-  nestedFunction();
-}
-myFunction();
+//   function nestedFunction() {
+//     console.log(internal);
+//   }
+//   nestedFunction();
+// }
+// myFunction();
