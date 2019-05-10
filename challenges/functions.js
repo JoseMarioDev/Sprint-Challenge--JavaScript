@@ -39,6 +39,9 @@ console.log(consume('Mary', 'Poppins', greeting)); // Hello Mary Poppins, nice t
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
 // Explanation:
+closure allows functions to look outside its local scope to find the variable its looking for.  in the example, 
+nested function goes one layer above it to myFunction to find the variable it needs.  closure allows for functions to look outside it's local scope
+to find the variable it needs.
 
 const external = "I'm outside the function";
 
